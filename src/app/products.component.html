@@ -1,0 +1,63 @@
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a data-toggle="tab" href="#id1">Most Popular</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#id2">Chronological</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#id3">Issues</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#id4">Recently Updated</a></li>
+  </ul>
+
+  <div class="container">
+  <div class="tab-content">
+      <div id="id1" class="tab-pane fade in active">
+        <h3>Most Popular</h3>
+        <p>{{catalog.popular}}</p>
+      </div>
+      <div id="id2" class="tab-pane fade">
+        <h3>Chronological</h3>
+        <p>{{catalog.chronological}}</p>
+      </div>
+      <div id="id3" class="tab-pane fade">
+        <h3>Issues</h3>
+        <p>{{catalog.issues}}</p>
+      </div>
+      <div id="id4" class="tab-pane fade">
+        <h3>Recently Updated</h3>
+        <p>{{catalog.updated}}</p>
+      </div>
+    </div>
+  </div>
+
+<!--
+<div class="container">
+  
+  <div class="jumbotron">
+    <h1>List of Products</h1>
+    
+  </div>
+  </div>
+
+  <table class="table table-hover">
+    <tr>
+      <th>#</th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Availability</th>
+      
+    </tr>
+    <tr *ngFor="let product of products" (click)="onSelect(product)" [class.selected]="product === selectedProduct"   >
+      <td>{{product.id}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.price | myCurrency}}</td>
+      <td>Available</td>
+      
+    </tr>
+
+  </table>
+
+  <div *ngIf="selectedProduct">
+    <h2>
+      You have selected: {{selectedProduct.name | uppercase}} 
+    </h2>
+    <button (click)="gotoDetail()" > View Details </button>
+  </div>
+
+-->
